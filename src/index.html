@@ -66,7 +66,9 @@
           </div>
         </nav>
         <section>
-          <div class="container px-9 mx-auto lg:w-[1299px] lg:mx-auto lg:px-0">
+          <div
+            class="container px-9 mx-auto lg:max-w-[1299px] lg:mx-auto lg:px-0 sm:mx-auto sm:px-0"
+          >
             <!-- =============================================================================================== -->
             <div class="lg:justify-between lg:flex pt-24">
               <div class="flex flex-col gap-5 mt-8 lg:w-[37.6875rem] lg:gap-12">
@@ -133,7 +135,7 @@
 
             <div class="flex items-center mt-10 gap-2.5 lg:mt-0">
               <div
-                class="flex justify-center items-center w-7.5 h-7.5 border-0 rounded-md bg-white/20"
+                class="flex justify-center items-center w-[30px] h-[30px] border-0 rounded-md bg-white/20"
               >
                 <img class="object-cover w-5 h-5" src="icons/clock.svg" />
               </div>
@@ -143,60 +145,58 @@
             </div>
             <!-- =============================================================================================== -->
             <div
-              class="bg-white/5 rounded-2xl mt-10 pt-2.5 px-2.5 pb-2.5 lg:flex lg:justify-between lg:px-10 lg:pt-14 lg:pb-11"
+              class="bg-white/5 grid lg:grid-cols-4 sm:grid-cols-2 rounded-2xl sm:text-xl mt-10 pt-2.5 px-2.5 pb-2.5 lg:pt-14 lg:pb-11"
             >
-              <div class="lg:flex">
-                <div class="mt-4 flex items-center gap-2.5 lg:m-0">
-                  <div
-                    class="flex justify-center items-center w-7.5 h-7.5 border-0 rounded-md bg-white/20"
-                  >
-                    <img src="icons/location.svg" />
-                  </div>
-                  <div class="flex flex-col leading-2 lg:text-2xl">
-                    <span class="text-white/50">Location</span>
-                    <input
-                      type="text"
-                      placeholder="Enter location"
-                      class="text-white"
-                    />
-                  </div>
+              <div class="mt-4 flex items-center gap-2.5">
+                <div
+                  class="flex justify-center items-center w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] border-0 shrink-0 rounded-md bg-white/20"
+                >
+                  <img src="icons/location.svg" class="w-[70%]" />
                 </div>
-                <div class="mt-4 flex items-center gap-2.5 lg:m-0">
-                  <div
-                    class="flex justify-center items-center w-7.5 h-7.5 border-0 rounded-md bg-white/20"
-                  >
-                    <img src="icons/calendar.svg" />
-                  </div>
-                  <div class="flex flex-col leading-2 lg:text-2xl lg">
-                    <span class="text-white/50">Date</span>
-                    <input
-                      type="text"
-                      placeholder="Enter date"
-                      class="text-white"
-                    />
-                  </div>
+                <div class="flex flex-col leading-4 lg:text-2xl">
+                  <span class="text-white/50">Location</span>
+                  <input
+                    type="text"
+                    placeholder="Enter location"
+                    class="text-white font-bold w-full"
+                  />
                 </div>
-                <div class="mt-4 flex items-center gap-2.5 lg:m-0 lg:text-2xl">
-                  <div
-                    class="flex justify-center items-center w-7.5 h-7.5 border-0 rounded-md bg-white/20"
-                  >
-                    <img src="icons/shield.png" />
-                  </div>
-                  <div class="flex flex-col leading-2">
-                    <span class="text-white/50">Vaccine Type</span>
-                    <input
-                      type="text"
-                      placeholder="Enter Type"
-                      class="text-white"
-                    />
-                  </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2.5">
+                <div
+                  class="flex justify-center items-center w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] border-0 shrink-0 rounded-md bg-white/20"
+                >
+                  <img src="icons/calendar.svg" class="w-[70%]" />
+                </div>
+                <div class="flex flex-col leading-4 lg:text-2xl lg">
+                  <span class="text-white/50">Date</span>
+                  <input
+                    type="text"
+                    placeholder="Enter date"
+                    class="text-white font-bold w-full"
+                  />
+                </div>
+              </div>
+              <div class="mt-4 flex items-center gap-2.5 lg:text-2xl">
+                <div
+                  class="flex justify-center items-center w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] border-0 shrink-0 rounded-md bg-white/20"
+                >
+                  <img src="icons/shield.png" class="w-[70%]" />
+                </div>
+                <div class="flex flex-col leading-4">
+                  <span class="text-white/50">Vaccine Type</span>
+                  <input
+                    type="text"
+                    placeholder="Enter Type"
+                    class="text-white font-bold w-full"
+                  />
                 </div>
               </div>
               <div
-                class="flex justify-center w-36 h-12 bg-white/20 hover:bg-cyan-400 border-0 rounded-xl mt-5 lg:m-0 lg:flex lg:items-center lg:h-[69px]"
+                class="flex justify-center w-36 h-12 sm:w-[253px] sm:h-[64px] bg-white/20 hover:bg-cyan-400 border-0 rounded-xl mt-5 lg:m-0 lg:flex lg:w-[142px] lg:h-[69px] lg:justify-self-end"
               >
                 <button
-                  class="text-white text-sm font-bold px-3.5 lg:text-2xl lg:h-[69px]"
+                  class="text-white text-sm font-bold lg:text-2xl sm:text-xl"
                 >
                   Submit
                 </button>
@@ -205,7 +205,7 @@
           </div>
           <!-- =============================================================================================== -->
           <div
-            class="flex justify-center items-center gap-3 bg-white h-10 lg:h-38 lg:bg-white/50"
+            class="flex justify-center items-center gap-3 bg-white h-10 lg:h-38 lg:bg-white/50 md:h-20"
           >
             <div class="w-[72px] flex justify-center lg:w-[288px]">
               <img src="logos/Moderna-logo.png" />
@@ -223,6 +223,115 @@
           <!-- =============================================================================================== -->
         </section>
       </section>
+    </section>
+    <section
+      class="bg-[url('./swaleh/background.png')] bg-cover bg-center pb-8 pt-20 md:pt-14 lg:pt-15 px-8"
+    >
+      <div
+        class="flex mx-auto flex-col gap-5 lg:gap-9 text-white bg-white/10 w-full max-w-[1299px] min-h-[341px] rounded-3xl shadow-lg px-3 pb-8"
+      >
+        <p
+          class="bg-white/5 -mx-3 h-10 flex justify-center lg:px-25 px-4 lg:justify-start lg:h-25 items-center font-bold text-[10px] md:text-[20px] lg:text-[24px] tracking-widest lg:tracking-normal"
+        >
+          Check your COVID-19 result on our Database
+        </p>
+        <div
+          class="flex justify-center mx-auto flex-col gap-5 w-full lg:flex-row"
+        >
+          <input
+            type="text"
+            placeholder="Name"
+            class="border-3 border-white/20 outline-0 focus:border-cyan-400 rounded-lg h-[50px] md:h-[69px] lg:h-[69px] lg:w-[450px] pl-4 w-full"
+          />
+
+          <input
+            type="text"
+            placeholder="Name"
+            class="border-3 border-white/20 outline-0 focus:border-cyan-400 rounded-lg h-[50px] md:h-[69px] lg:h-[69px] lg:w-[450px] pl-4 w-full"
+          />
+          <button
+            class="border-3 rounded-lg self-start w-[147px] md:w-[172px] md:h-16 lg:w-[173px] lg:h-[69px] h-12 text-cyan-400"
+          >
+            Check
+          </button>
+        </div>
+        <button
+          class="text-cyan-400 text-[10px] md:text-sm lg:max-w-[1113px] lg:text-2xl tracking-wide font-bold px-5 leading-3 bg-white/5 rounded-2xl h-12 lg:h-[70px] mx-auto flex items-center justify-center hover:bg-white/40"
+        >
+          Need a certificate for your COVID-19 result? Please click here
+        </button>
+      </div>
+    </section>
+    <section class="w-[85%] mx-auto pt-10">
+      <div class="flex justify-center text-center">
+        <p class="text-black font-bold text-2xl w-[230px] text-left">
+          Get your vaccine registration today
+        </p>
+      </div>
+      <div class="mb-10">
+        <img src="swaleh/brrrra.png" />
+      </div>
+
+      <h4 class="text-sm font-bold">Patient’s Full Name</h4>
+      <input
+        type="text"
+        placeholder="Full name"
+        class="bg-black/15 rounded-md h-12 w-full pl-4 font-medium"
+      />
+      <h4 class="font-bold text-sm">Mobile Number</h4>
+      <p class="text-sm">
+        Notifications for appointment and reminders will be sent to this
+        provided number
+      </p>
+
+      <div class="max-w-sm mx-auto">
+        <div
+          class="flex rounded-xl overflow-hidden border border-gray-300 bg-white"
+        >
+          <!-- Flag dropdown -->
+          <div class="relative">
+            <select
+              class="appearance-none bg-gray-50 pl-3 pr-8 py-2 text-sm font-medium focus:outline-none"
+            >
+              <option value="dz">🇩🇿 +213</option>
+              <option value="fr">🇫🇷 +33</option>
+              <option value="us">🇺🇸 +1</option>
+              <option value="gb">🇬🇧 +44</option>
+            </select>
+            <!-- dropdown arrow -->
+            <div
+              class="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 text-gray-500"
+            >
+              ▼
+            </div>
+          </div>
+
+          <!-- Phone number input -->
+          <input
+            id="phone"
+            type="tel"
+            placeholder="555 12 34 56"
+            class="flex-1 px-3 py-2 focus:outline-none text-gray-800 text-sm"
+          />
+        </div>
+        <!-- Phone number input -->
+      </div>
+      <button
+        class="w-[45%] bg-cyan-400 text-white h-12.5 text-sm font-bold rounded-lg"
+      >
+        verify
+      </button>
+      <button
+        class="w-full bg-cyan-400 text-white h-12.5 text-sm font-bold rounded-lg"
+      >
+        Submit
+      </button>
+      <div class="flex justify-between">
+        <p class="font-bold text-sm">Already registered ?</p>
+        <button class="font-bold text-sm text-cyan-400">
+          Check your status
+        </button>
+      </div>
     </section>
   </body>
 </html>
